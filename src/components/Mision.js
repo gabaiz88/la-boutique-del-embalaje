@@ -5,7 +5,7 @@ import linea from '../img/linea_crayon_naranja.jpg'
 const Mision = () => {
     return (
         <div className='flex flex-col sm:flex-row'>
-            <div id="mision" className='bg-red_mision w-full p-5 sm:w-8/12 sm:p-10'>
+            <div id="mision" className='bg-red_mision p-5 sm:w-8/12 sm:p-10'>
                 <div className="flex justify-center mx-auto sm:gap-36">
                     <div className='sm:ml-12'>
                         <img src={imagen} className='rounded-3xl w-128' alt="imagen"></img>
