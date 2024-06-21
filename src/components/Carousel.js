@@ -24,14 +24,6 @@ const Carousel = () => {
     setCurrentSlide((prevSlide) => (prevSlide === slides.length - 1 ? 0 : prevSlide + 1));
   };
 
-  const prevSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide === 0 ? slides.length - 1 : prevSlide - 1));
-  };
-
-  const setSlide = (index) => {
-    setCurrentSlide(index);
-  };
-
   return (
     <div className="relative mx-auto mt-auto max-w-full max-h-[550px] overflow-hidden">
       <div className="relative">
