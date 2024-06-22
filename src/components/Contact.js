@@ -4,7 +4,7 @@ import ContactForm from "./Contact_Form";
 const Contact = () => {
     return (
         <div id="contact" className='w-full bg-hookers_green'>
-            <div className="w-full p-5 sm:w-10/12 text-center sm:mx-auto flex-col justify-center bg-blue_contact sm:p-10">
+            <div className="p-5 sm:w-10/12 text-center sm:mx-auto flex-col justify-center bg-blue_contact sm:p-10">
                 <h2 className="text-5xl mb-10 text-gray-800">Contacto</h2>
                 <div className='flex flex-col sm:flex-row justify-center items-center w-full gap-10 sm:ml-5'>
                     <div className='h-full gap-3 flex flex-col justify-center items-center'>
