@@ -25,7 +25,7 @@ const Carousel = () => {
   };
 
   return (
-    <div className="-z-10 relative mx-auto mt-auto max-w-full max-h-[150px] sm:max-h-[550px] overflow-hidden">
+    <div className="-z-10 relative mx-auto mt-auto max-w-full max-h-[140px] sm:max-h-[550px] overflow-hidden">
       <div className="relative">
         {slides.map((slide, index) => (
           <div
