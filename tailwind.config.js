@@ -16,7 +16,7 @@ module.exports = {
         'ecru': '#5A5441',
         'vainilla': '#e9d8a6',
         'hookers_green': '#76c893',
-        'orange_card': '#CF5C36',
+        'orange_card': '##E75340',
         'red_mision': '#FE4A49',
         'red_mision_light': '#FE6E51',
         'blue_nav': '#0D1663',
