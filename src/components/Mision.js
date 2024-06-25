@@ -13,7 +13,7 @@ const Mision = () => {
                 </div>
             </div>
 
-            <div className='bg-orange_card w-full p-5 sm:w-2/4 flex flex-col justify-start sm:p-10'>
+            <div className='bg-orange_card p-5 sm:w-2/4 flex flex-col justify-start sm:p-10'>
                 <div className=''>
                     <h2 className="text-5xl mb-1 text-black">Misión</h2>
                     <img src={linea} className='w-32 mr-3' alt="linea"></img>
