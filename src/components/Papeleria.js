@@ -18,6 +18,7 @@ const Papeleria = () => {
             origin: 'bottom',
             distance: '20px',
             duration: 1000,
+            delay: 200,
             reset: true,
         });
     }, []);
