@@ -36,8 +36,8 @@ const Navbar = () => {
                   )}
                 </DisclosureButton>
               </div>
-              <div className="flex flex-1 items-center sm:items-stretch sm:justify-between">
-                <div className='flex w-full sm:w-10/12 flex-col sm:flex-row items-center justify-center"'>
+              <div className="flex flex-1 items-center sm:items-stretch sm:justify-around">
+                <div className='flex w-full sm:w-8/12 flex-col sm:flex-row items-center justify-center"'>
                   <img src={imagen_logo} className='sm:h-auto w-20' alt='logo'/>
                   <p id='logo_name' className='sm:self-center ml-8 mt-2'>LA BOUTIQUE DEL EMBALAJE</p>
                 </div>
