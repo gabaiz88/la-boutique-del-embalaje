@@ -23,7 +23,9 @@ const Card = () => {
       <div className="w-full h-24 bg-orange_card rounded-b-2xl items-center">
         <h2 className="text-3xl text-black text-center mt-3">PAPELERÍA</h2>      
         <div>
-          <Link to="/papeleria"><p className="text-end mt-4 mr-3 text-1xl text-white hover:drop-shadow-custom">Ver productos</p></Link>
+          <Link to="/papeleria">
+            <p className="text-end mt-4 mr-3 text-1xl text-white hover:drop-shadow-custom">Ver productos</p>
+          </Link>
         </div>
       </div>
     </CardContainer>

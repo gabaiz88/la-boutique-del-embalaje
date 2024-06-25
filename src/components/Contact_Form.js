@@ -15,7 +15,7 @@ function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="p-5 sm:w-128 sm:h-128 sm:mx-auto sm:p-10 bg-white shadow-md rounded-lg space-y-6">
+    <form onSubmit={handleSubmit} className="p-5 sm:w-128 sm:h-96 sm:mx-auto sm:p-10 bg-white shadow-md rounded-lg space-y-6">
       <div className="relative">
         <input
           id="nombre"
