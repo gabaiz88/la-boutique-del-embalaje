@@ -1,6 +1,5 @@
 import React from 'react';
 import imagen from '../img/frente_laboutique_cortada.png';
-import linea from '../img/linea_crayon_naranja.jpg'
 
 const Mision = () => {
     return (
