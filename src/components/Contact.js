@@ -23,7 +23,7 @@ const Contact = () => {
                             <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0689555931885!2d-58.4192638!3d-34.6024178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb63f8aa6127%3A0x6d839dc8a4c2ed9b!2sLa%20boutique%20del%20embalaje!5e0!3m2!1ses!2ses!4v1717515113194!5m2!1ses!2ses" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="mymap"></iframe>
                         </div>
                     </div>
-                    <div className='mb-5 sm:mb-0'>
+                    <div className='w-full sm:w-auto mb-5 sm:mb-0'>
                         <ContactForm />
                     </div>
                 </div>
