@@ -37,10 +37,12 @@ const Navbar = () => {
                 </DisclosureButton>
               </div>
               <div className="flex flex-1 items-center sm:items-stretch sm:justify-around">
+                  <a href='/' className='w-10/12'>
                 <div className='flex w-full sm:w-8/12 flex-col sm:flex-row items-center justify-center"'>
-                  <img src={imagen_logo} className='sm:h-auto w-20' alt='logo'/>
-                  <p id='logo_name' className='sm:self-center ml-8 mt-2'>LA BOUTIQUE DEL EMBALAJE</p>
+                    <img src={imagen_logo} className='sm:h-auto w-20' alt='logo'/>
+                    <p id='logo_name' className='sm:self-center ml-8 mt-2'>LA BOUTIQUE DEL EMBALAJE</p>
                 </div>
+                  </a>
                 <div className="hidden self-center sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
