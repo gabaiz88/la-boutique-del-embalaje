@@ -76,7 +76,7 @@ h1, h2 {
 @media (width <= 768px) {
   #mapa{
     padding: 12px;
-    width: 22rem;
+    width: 23rem;
     height: 300px;
     border: none;
   }
