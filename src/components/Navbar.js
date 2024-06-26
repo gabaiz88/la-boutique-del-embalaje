@@ -38,7 +38,7 @@ const Navbar = () => {
               </div>
               <div className="flex flex-1 items-center sm:items-stretch sm:justify-around">
                   <a href='/' className='w-10/12'>
-                <div className='flex w-full sm:w-8/12 flex-col sm:flex-row items-center justify-center"'>
+                <div className='flex w-full ml-8 sm:w-8/12 flex-col sm:flex-row items-center justify-center"'>
                     <img src={imagen_logo} className='sm:h-auto w-20' alt='logo'/>
                     <p id='logo_name' className='sm:self-center ml-8 mt-2'>LA BOUTIQUE DEL EMBALAJE</p>
                 </div>
