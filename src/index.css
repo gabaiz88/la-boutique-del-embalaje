@@ -35,6 +35,7 @@ h1, h2 {
 #mapa{
   width:550px;
   height:388px;
+  border: none;
 }
 
 .input-field {
