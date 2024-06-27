@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import ScrollReveal from 'scrollreveal';
 import img1 from '../img/papeleria/img1.jpg';
 import img2 from '../img/papeleria/img2.jpg';
@@ -13,8 +13,10 @@ import img10 from '../img/papeleria/img10.jpg';
 import img11 from '../img/papeleria/img11.jpg';
 
 const Papeleria = () => {
+    const sr = useRef(ScrollReveal());
+
     useEffect(() => {
-        ScrollReveal().reveal('.reveal', {
+        sr.current.reveal('.reveal', {
             origin: 'bottom',
             distance: '20px',
             duration: 1000,
