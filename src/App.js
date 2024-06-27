@@ -10,6 +10,7 @@ import Cards from './components/Cards';
 import Papeleria from './components/Papeleria';
 import Mision from './components/Mision';
 import WhatsappIcon from './components/WhatsappIcon';
+import Descartables from './components/Descartables';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             </>
           }/>
           <Route path="/papeleria" element={<Papeleria />} />
+          <Route path="/descartables" element={<Descartables />} />
         </Routes>
       </div>
     </Router>
