@@ -32,10 +32,10 @@ const Papeleria = () => {
                 <h2 className="text-3xl mb-5 text-white">Papeleria - Embalaje</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
                     <div className="flex flex-col space-y-5">
-                        <img src={img1} alt="random1" className="reveal w-full h-auto object-cover rounded-lg" />
-                        <img src={img4} alt="random4" className="reveal w-full h-auto object-cover rounded-lg" />
-                        <img src={img7} alt="random7" className="reveal w-full h-auto object-cover rounded-lg" />
-                        <img src={img10} alt="random10" className="reveal w-full h-auto object-cover rounded-lg" />
+                        <img src={img1} alt="random1" className="reveal w-full h-auto object-cover rounded-lg" style={{ transitionDelay: '200ms' }} />
+                        <img src={img4} alt="random4" className="reveal w-full h-auto object-cover rounded-lg" style={{ transitionDelay: '400ms' }}/>
+                        <img src={img7} alt="random7" className="reveal w-full h-auto object-cover rounded-lg" style={{ transitionDelay: '600ms' }}/>
+                        <img src={img10} alt="random10" className="reveal w-full h-auto object-cover rounded-lg" style={{ transitionDelay: '800ms' }}/>
                     </div>
                     <div className="flex flex-col space-y-5">
                         <img src={img2} alt="random2" className="reveal w-full h-auto object-cover rounded-lg" />
