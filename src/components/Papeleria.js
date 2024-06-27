@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from 'react';
-import ScrollReveal from 'scrollreveal';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
 import img1 from '../img/papeleria/img1.jpg';
 import img2 from '../img/papeleria/img2.jpg';
 import img3 from '../img/papeleria/img3.jpg';
@@ -13,16 +13,12 @@ import img10 from '../img/papeleria/img10.jpg';
 import img11 from '../img/papeleria/img11.jpg';
 
 const Papeleria = () => {
-    const sr = useRef(ScrollReveal());
 
     useEffect(() => {
-        sr.current.reveal('.reveal', {
-            origin: 'bottom',
-            distance: '20px',
+        AOS.init({
             duration: 1000,
-            delay: 200,
-            reset: true,
-            viewFactor: 0.2,
+            once: false,
+            offset: 50,
         });
     }, []);
 
@@ -32,16 +28,16 @@ const Papeleria = () => {
                 <h2 className="text-3xl mb-5 text-white">Papeleria - Embalaje</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
                     <div className="flex flex-col space-y-5">
-                        <img src={img1} alt="random1" className="reveal w-full h-auto object-cover rounded-lg" style={{ transitionDelay: '200ms' }} />
-                        <img src={img4} alt="random4" className="reveal w-full h-auto object-cover rounded-lg" style={{ transitionDelay: '400ms' }}/>
-                        <img src={img7} alt="random7" className="reveal w-full h-auto object-cover rounded-lg" style={{ transitionDelay: '600ms' }}/>
-                        <img src={img10} alt="random10" className="reveal w-full h-auto object-cover rounded-lg" style={{ transitionDelay: '800ms' }}/>
+                        <img src={img1} alt="random1" className="reveal w-full h-auto object-cover rounded-lg" data-aos="fade-up" />
+                        <img src={img4} alt="random4" className="reveal w-full h-auto object-cover rounded-lg" data-aos="fade-up" />
+                        <img src={img7} alt="random7" className="reveal w-full h-auto object-cover rounded-lg" data-aos="fade-up" />
+                        <img src={img10} alt="random10" className="reveal w-full h-auto object-cover rounded-lg" data-aos="fade-up" />
                     </div>
                     <div className="flex flex-col space-y-5">
-                        <img src={img2} alt="random2" className="reveal w-full h-auto object-cover rounded-lg" />
-                        <img src={img5} alt="random5" className="reveal w-full h-auto object-cover rounded-lg" />
-                        <img src={img8} alt="random8" className="reveal w-full h-auto object-cover rounded-lg" />
-                        <img src={img11} alt="random11" className="reveal w-full h-auto object-cover rounded-lg" />
+                        <img src={img2} alt="random2" className="reveal w-full h-auto object-cover rounded-lg" data-aos="fade-up" />
+                        <img src={img5} alt="random5" className="reveal w-full h-auto object-cover rounded-lg" data-aos="fade-up" />
+                        <img src={img8} alt="random8" className="reveal w-full h-auto object-cover rounded-lg" data-aos="fade-up" />
+                        <img src={img11} alt="random11" className="reveal w-full h-auto object-cover rounded-lg" data-aos="fade-up" />
                     </div>
                     <div className="flex flex-col space-y-5">
                         <img src={img3} alt="random3" className="reveal w-full h-auto object-cover rounded-lg" />
