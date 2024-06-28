@@ -24,7 +24,7 @@ const Card = () => {
         <h2 className="text-3xl text-black text-center mt-3">PAPELERÍA</h2>      
         <div>
           <Link to="/papeleria">
-            <p className="text-end mt-4 mr-3 text-1xl text-white hover:drop-shadow-custom">Ver productos</p>
+            <p className="text-end mt-4 mr-3 text-2xl text-white hover:drop-shadow-custom">Ver productos</p>
           </Link>
         </div>
       </div>
