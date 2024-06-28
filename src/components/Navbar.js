@@ -71,7 +71,7 @@ const Navbar = () => {
                     ))}
                     {/* Botón de ayuda */}
                     <button
-                      className="text-black hover:bg-blue_nav hover:text-blue-100 rounded-md px-3 py-2"
+                      className="text-black hover:bg-blue_nav hover:text-blue-100 rounded-md px-3 py-2 border-none"
                       onClick={openModal}
                     >
                       Ayuda
