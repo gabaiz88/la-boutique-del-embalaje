@@ -72,7 +72,6 @@ const PapeleriaTitle = () => {
         }
 
         @media (min-width: 769px) {
-
           .papeleria-title h3 {
             display: none;
           }

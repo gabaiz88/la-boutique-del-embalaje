@@ -1,7 +1,35 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import video from "../img/cotillon/titulo2.mp4";
 
 const CotillonTitle = () => {
+    const videoRef = useRef(null);
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+
+        handleResize(); // Set initial state
+        window.addEventListener("resize", handleResize);
+
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+
+    useEffect(() => {
+        if (videoRef.current) {
+            if (isMobile) {
+                videoRef.current.pause();
+                videoRef.current.removeAttribute("autoplay");
+            } else {
+                videoRef.current.play();
+                videoRef.current.setAttribute("autoplay", true);
+            }
+        }
+    }, [isMobile]);
+
     return (
         <div className="cotillon-title relative">
             <style>{`
@@ -28,7 +56,8 @@ const CotillonTitle = () => {
             text-align: center;
             mix-blend-mode: multiply;
         }
-                    @media (max-width: 768px) {
+
+        @media (max-width: 768px) {
           .cotillon-title video {
             display: none;
           }
@@ -41,7 +70,7 @@ const CotillonTitle = () => {
         }
 
       `}</style>
-            <video autoPlay muted loop>
+            <video ref={videoRef} muted loop>
                 <source src={video} type="video/mp4" />
             </video>
             <h3 className="text-white text-4xl text-center my-5 sm:invisible"> Cotillón </h3>
