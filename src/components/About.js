@@ -1,6 +1,5 @@
 import React from 'react';
 import imagen from '../img/descartables_about2.jpg';
-import linea from '../img/linea_crayon.jpg'
 
 const About = () => {
   return (
