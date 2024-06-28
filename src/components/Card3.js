@@ -22,7 +22,7 @@ const Card2 = () => {
       <div className="w-full h-24 bg-orange_card rounded-b-2xl items-center">
         <h2 className="text-3xl text-black text-center mt-3">COTILLÓN</h2>      
         <div>
-          <Link to="/cotillon"><p className="text-end mt-4 mr-3 text-2xl text-white hover:drop-shadow-custom">Ver productos</p></Link>
+          <Link to="/cotillon"><p className="text-center mt-4 mr-3 text-2xl text-white hover:drop-shadow-custom hover:text-black">Ver productos</p></Link>
         </div>
       </div>
     </CardContainer>
