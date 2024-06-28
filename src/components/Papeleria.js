@@ -14,6 +14,10 @@ const Papeleria = () => {
   const imgRefs = useRef([]);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+}, []);
+
+  useEffect(() => {
     const currentRefs = imgRefs.current;
     const options = {
       root: null,
