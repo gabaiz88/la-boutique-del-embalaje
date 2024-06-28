@@ -20,11 +20,11 @@ const Card = () => {
           />
         </CardItem>
       </CardBody>
-      <div className="w-full h-24 bg-orange_card rounded-b-2xl items-center">
+      <div className="w-full h-24 bg-orange_card rounded-b-2xl flex flex-col justify-between items-center">
         <h2 className="text-3xl text-black text-center mt-3">PAPELERÍA</h2>      
         <div>
           <Link to="/papeleria">
-            <p className="text-center mt-4 mr-3 text-2xl text-white hover:drop-shadow-custom hover:text-black">Ver productos</p>
+            <p className="mt-4 text-2xl text-white hover:drop-shadow-custom hover:text-black">Ver productos</p>
           </Link>
         </div>
       </div>
