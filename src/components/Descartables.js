@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import img1 from '../img/descartables/img1.jpg';
 import img2 from '../img/descartables/img2.jpg';
 import img3 from '../img/descartables/img3.jpg';
@@ -22,7 +23,12 @@ import DescartablesTitle from "./DescartablesTitle";
 
 const Descartables = () => {
     const imgRefs = useRef([]);
+    const navigate = useNavigate();
 
+    if (window.location.hash === '#product' || window.location.hash === '#about' || window.location.hash === '#contact') {
+      navigate('/', { replace: true });
+    }
+    
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);

@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import img1 from '../img/cotillon/img1.jpg';
 import img2 from '../img/cotillon/img2.jpg';
 import img3 from '../img/cotillon/img3.jpg';
@@ -7,6 +8,11 @@ import CotillonTitle from "./CotillonTitle";
 
 const Cotillon = () => {
     const imgRefs = useRef([]);
+    const navigate = useNavigate();
+
+    if (window.location.hash === '#product' || window.location.hash === '#about' || window.location.hash === '#contact') {
+      navigate('/', { replace: true });
+    }
 
     useEffect(() => {
         window.scrollTo(0, 0);

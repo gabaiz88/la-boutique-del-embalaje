@@ -1,28 +1,39 @@
+import React, { useState } from 'react';
 import {
   Disclosure,
   DisclosureButton,
   DisclosurePanel,
-} from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import imagen_logo from '../img/logo2.png'
+} from '@headlessui/react';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import imagen_logo from '../img/logo2.png';
+import Help from './Help'; // Importa tu modal de ayuda aquí
 
 const navigation = [
   { name: 'Productos', href: '#product', current: false },
   { name: 'Nosotros', href: '#about', current: false },
-  { name: 'Ayuda', href: '#', current: false },
   { name: 'Contacto', href: '#contact', current: true },
-]
+];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(' ');
 }
 
 const Navbar = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <Disclosure as="nav" className="bg-white h-36 sm:h-20 top-0 z-10 backdrop-blur-md sm:w-full py-2">
       {({ open }) => (
         <>
-          <div className="mx-auto md:w-11/12 px-2 sm:px-6 lg:px-8">
+          <div className="md:w-11/12 px-2 sm:px-6 lg:px-8">
             <div className="relative flex sm:h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-start sm:hidden">
                 {/* Mobile menu button*/}
@@ -37,12 +48,12 @@ const Navbar = () => {
                 </DisclosureButton>
               </div>
               <div className="flex flex-1 items-center sm:items-stretch sm:justify-around">
-                  <a href='/' className='w-10/12'>
-                <div className='flex w-full ml-8 sm:w-8/12 flex-col sm:flex-row items-center justify-center"'>
-                    <img src={imagen_logo} className='sm:h-auto w-20' alt='logo'/>
-                    <p id='logo_name' className='sm:self-center ml-8 mt-2'>LA BOUTIQUE DEL EMBALAJE</p>
-                </div>
-                  </a>
+                <a href="/" className="w-10/12">
+                  <div className="flex w-full ml-8 sm:w-8/12 flex-col sm:flex-row items-center justify-center">
+                    <img src={imagen_logo} className="sm:h-auto w-20" alt="logo" />
+                    <p id="logo_name" className="sm:self-center ml-8 mt-2">LA BOUTIQUE DEL EMBALAJE</p>
+                  </div>
+                </a>
                 <div className="hidden self-center sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
@@ -58,12 +69,20 @@ const Navbar = () => {
                         {item.name}
                       </a>
                     ))}
+                    {/* Botón de ayuda */}
+                    <button
+                      className="text-black hover:bg-blue_nav hover:text-blue-100 rounded-md px-3 py-2"
+                      onClick={openModal}
+                    >
+                      Ayuda
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
+          {/* Panel para el menú móvil */}
           <DisclosurePanel className="sm:hidden absolute top-12 left-2">
             <div className="bg-gray-300 rounded-md w-36 space-y-1 px-2 pb-3 pt-2">
               {navigation.map((item) => (
@@ -82,10 +101,13 @@ const Navbar = () => {
               ))}
             </div>
           </DisclosurePanel>
+
+          {/* Modal de ayuda */}
+          <Help isOpen={isModalOpen} onClose={closeModal} />
         </>
       )}
     </Disclosure>
-  )
+  );
 };
 
 export default Navbar;
