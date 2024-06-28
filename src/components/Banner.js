@@ -4,7 +4,7 @@ import tarjetas from "../img/tarjetas.png";
 
 const Banner = () => {
     return (
-            <div class="flex flex-wrap m-5 gap-6 sm:flex-row items-center justify-center sm:gap-24 sm:my-5">
+            <div class="flex flex-wrap m-5 sm:m-0 sm:p-5 gap-6 sm:flex-row items-center justify-center sm:gap-24 bg-white">
                 <div class="envios flex h-24 w-40 justify-center box-border rounded sm:h-20 sm:w-56 p-2 gap-2 items-center text-gray-700 bg-gray-300">
                     <span class="material-symbols-outlined text-4xl"> local_shipping </span>
                     <p>Envios a domicilio</p>
