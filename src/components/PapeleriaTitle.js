@@ -27,10 +27,22 @@ const PapeleriaTitle = () => {
             font-weight: 900;
             mix-blend-mode: multiply;
         }
+               @media (max-width: 768px) {
+          .papeleria-title video {
+            display: none;
+          }
+
+          .papeleria-title h2 {
+            background-color: #000;
+            font-size: 5vw;
+            display: none;
+          }
+        }
       `}</style>
             <video autoPlay muted loop>
                 <source src={video} type="video/mp4" />
             </video>
+            <h3 className="text-white text-4xl text-center my-5 sm:invisible"> Papelería </h3>
             <h2>PAPELERÍA</h2>
         </div>
     );

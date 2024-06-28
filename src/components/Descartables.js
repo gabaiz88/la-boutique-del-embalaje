@@ -18,6 +18,7 @@ import img16 from '../img/descartables/img16.jpg';
 import img17 from '../img/descartables/img17.jpg';
 import img18 from '../img/descartables/img18.jpg';
 import img19 from '../img/descartables/img19.jpg';
+import DescartablesTitle from "./DescartablesTitle";
 
 const Descartables = () => {
     const imgRefs = useRef([]);
@@ -54,7 +55,8 @@ const Descartables = () => {
     }, []);
 
     return (
-        <div className='bg-black'>
+        <div className="container relative">
+            <DescartablesTitle />
           <style>{`
                 .reveal {
                     opacity: 0;
@@ -67,7 +69,6 @@ const Descartables = () => {
                 }
             `}</style>
             <div className="flex flex-col items-center mx-auto p-5 max-w-[80%]">
-                <h2 className="text-3xl mb-5 text-white">Envases descartables</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
                     <div className="flex flex-col space-y-5">
                         <img ref={(el) => imgRefs.current[0] = el} src={img1} alt="random1" className="reveal w-full h-auto object-cover rounded-lg" />

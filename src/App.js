@@ -11,6 +11,7 @@ import Papeleria from './components/Papeleria';
 import Mision from './components/Mision';
 import WhatsappIcon from './components/WhatsappIcon';
 import Descartables from './components/Descartables';
+import Cotillon from './components/Cotillon';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           }/>
           <Route path="/papeleria" element={<Papeleria />} />
           <Route path="/descartables" element={<Descartables />} />
+          <Route path="/cotillon" element={<Cotillon />} />
         </Routes>
       </div>
     </Router>
