@@ -35,7 +35,7 @@ const PapeleriaTitle = () => {
       <style>{`
         .papeleria-title video {
           width: 83%;
-          height: 450px;
+          height: 480px;
           margin-left: 133px;
         }
 
